@@ -2,6 +2,22 @@
 
 A RESTful Student Enrollment API built using Python, Flask, and SQLite.
 
+## Live API
+
+The Student Enrollment API is deployed and publicly accessible:
+
+https://student-enrollment-api-045f.onrender.com
+
+### Example Endpoints
+
+GET all students:
+
+https://student-enrollment-api-045f.onrender.com/students
+
+GET a specific student:
+
+https://student-enrollment-api-045f.onrender.com/students/1
+
 ## Features
 
 - Enroll a student
@@ -48,3 +64,15 @@ Each student contains:
 
 ```bash
 git clone YOUR_REPOSITORY_URL
+
+## Example POST Request
+
+To enroll a student:
+
+```json
+{
+    "name": "Sanjana",
+    "age": 18,
+    "course": "CSE",
+    "email": "sanjana@example.com"
+}
