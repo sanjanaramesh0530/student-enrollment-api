@@ -8,7 +8,7 @@ This API allows users to create, view, update, partially update, and delete stud
 
 The API is deployed on Render:
 
-https://student-enrollment-api-045f.onrender.com
+https://student-enrollment-api-045f.onrender.com/students
 
 ## 🛠️ Technologies Used
 
