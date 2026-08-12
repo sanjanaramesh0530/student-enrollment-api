@@ -2,42 +2,36 @@
 
 A RESTful Student Enrollment API built using Python, Flask, and SQLite.
 
-## Live API
+This API allows users to create, view, update, partially update, and delete student enrollment records.
 
-The Student Enrollment API is deployed and publicly accessible:
+## 🚀 Live API
+
+The API is deployed on Render:
 
 https://student-enrollment-api-045f.onrender.com
 
-### Example Endpoints
-
-GET all students:
-
-https://student-enrollment-api-045f.onrender.com/students
-
-GET a specific student:
-
-https://student-enrollment-api-045f.onrender.com/students/1
-
-## Features
-
-- Enroll a student
-- View all students
-- View a specific student
-- Update student details
-- Partially update student details
-- Delete a student
-- Basic error handling
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Flask
 - SQLite
 - REST API
 - JSON
+- Gunicorn
+- Render
 - Git & GitHub
 
-## API Endpoints
+## 📌 Features
+
+- Add a new student
+- Get all students
+- Get a specific student
+- Update complete student details
+- Partially update student details
+- Delete a student
+- Store student data in SQLite database
+
+## 🔗 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -48,7 +42,7 @@ https://student-enrollment-api-045f.onrender.com/students/1
 | PATCH | `/students/<id>` | Partially update student details |
 | DELETE | `/students/<id>` | Delete a student |
 
-## Student Data
+## 📋 Student Data
 
 Each student contains:
 
@@ -58,21 +52,9 @@ Each student contains:
 - Course
 - Email
 
-## How to Run Locally
+## ➕ Add a Student
 
-### 1. Clone the repository
+### Endpoint
 
-```bash
-git clone YOUR_REPOSITORY_URL
-
-## Example POST Request
-
-To enroll a student:
-
-```json
-{
-    "name": "Sanjana",
-    "age": 18,
-    "course": "CSE",
-    "email": "sanjana@example.com"
-}
+```text
+POST /students
